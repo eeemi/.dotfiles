@@ -1,0 +1,17 @@
+#!/bin/bash
+# put file in ~/.local/bin/
+
+sessions=$(tmux ls)
+ok=$?
+if [ $ok -ne 0 ]; then
+    # echo "no sessions"
+    exit 0
+fi
+
+# echo ${sessions}
+
+fzf=$(echo "$sessions" | fzf | awk -F: '{print $1}')
+# echo $fzf
+
+tmux a -t $fzf
+
