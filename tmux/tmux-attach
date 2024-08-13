@@ -1,5 +1,5 @@
 #!/bin/bash
-# put file in ~/.local/bin/
+# put file in ~/.local/bin/ or /usr/local/bin
 
 sessions=$(tmux ls)
 ok=$?
