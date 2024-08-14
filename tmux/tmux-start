@@ -1,0 +1,12 @@
+#!/bin/bash
+# put file in ~/.local/bin/ or /usr/local/bin
+
+if tmux has-session -t home 2> /dev/null; then
+    tmux a -t home -c $PWD
+    exit 0
+else
+    tmux new -s home -c $PWD
+    exit 0
+fi
+
+
