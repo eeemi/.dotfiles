@@ -10,8 +10,11 @@ fi
 
 read -p "Enter query: " query; echo
 
-query=`echo $query | tr ' ' '+'`
-echo "cht.sh/$selected/$query"
+if [[ -n $query ]]; then
+    query=`echo $query | tr ' ' '+'`
+    selected=$selected/$query
+fi
 
-curl -s cht.sh/$selected/$query | less -R
+echo "cht.sh/$selected"
+curl -s cht.sh/$selected | less -R
 

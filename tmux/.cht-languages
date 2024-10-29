@@ -13,3 +13,13 @@ php
 css
 html
 gdb
+numpy
+pandas
+scipy
+seaborn
+tqdm
+matplotlib
+pytorch
+tensorflow
+r
+keras
