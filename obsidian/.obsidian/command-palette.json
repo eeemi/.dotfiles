@@ -1,0 +1,14 @@
+{
+  "pinned": [
+    "app:reload",
+    "insert-template",
+    "app:toggle-left-sidebar",
+    "app:toggle-right-sidebar",
+    "markdown:toggle-preview",
+    "editor:toggle-source",
+    "app:go-back",
+    "app:go-forward",
+    "graph:open",
+    "workspace:edit-file-title"
+  ]
+}
