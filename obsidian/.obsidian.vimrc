@@ -16,6 +16,9 @@ nmap <Space>fm :moveFile<CR>
 exmap openFile obcommand switcher:open
 nmap <Space>ff :openFile<CR>
 
+" close file
+exmap q obcommand workspace:close
+
 " delete file
 exmap removeFile obcommand app:delete-file
 nmap <Space>fr :removeFile<CR>
@@ -54,9 +57,35 @@ nmap <Space>rr :reload<CR>
 exmap insertTemplate obcommand insert-template
 nmap <Space>t :insertTemplate<CR>
 
-" vertical split
+" ================================
+" window navigation
+" ================================
+
+exmap focusRight obcommand editor:focus-right
+nmap <C-w>l :focusRight<CR>
+nmap <C-w><C-l> :focusRight<CR>
+
+exmap focusLeft obcommand editor:focus-left
+nmap <C-w>h :focusLeft<CR>
+nmap <C-w><C-h> :focusLeft<CR>
+
+exmap focusTop obcommand editor:focus-top
+nmap <C-w>k :focusTop<CR>
+nmap <C-w><C-k> :focusTop<CR>
+
+exmap focusBottom obcommand editor:focus-bottom
+nmap <C-w>j :focusBottom<CR>
+nmap <C-w><C-j> :focusBottom<CR>
+
 exmap vsplit obcommand workspace:split-vertical
-nmap <Space>v :vsplit<CR>
+nmap <C-w>v :vsplit<CR>
+
+exmap split obcommand workspace:split-horizontal
+nmap <C-w>s :split<CR>
+
+"" vertical split
+"exmap vsplit obcommand workspace:split-vertical
+"nmap <Space>v :vsplit<CR>
 
 " Go back and forward with Ctrl+O and Ctrl+I
 " (make sure to remove default Obsidian shortcuts for these to work)
@@ -65,4 +94,20 @@ nmap <C-o> :back<CR>
 exmap forward obcommand app:go-forward
 nmap <C-i> :forward<CR>
 
+" toggle spellcheck
+exmap toggleSpellCheck obcommand editor:toggle-spellcheck
+nmap <Space>st :toggleSpellCheck<CR>
+
+" ================================
+" daily notes
+" ================================
+
+exmap dailyNote obcommand daily-notes
+nmap <Space>j :dailyNote<CR>
+
+"exmap previousDaily obcommand daily-notes:goto-prev
+"nmap <Space>j :dailyNote
+"
+"exmap nextDaily obcommand daily-notes:goto-next
+"nmap <Space>j :dailyNote
 
