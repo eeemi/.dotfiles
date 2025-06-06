@@ -9,6 +9,9 @@
     "app:go-back",
     "app:go-forward",
     "graph:open",
-    "workspace:edit-file-title"
+    "workspace:edit-file-title",
+    "editor:toggle-spellcheck",
+    "daily-notes:goto-next",
+    "daily-notes:goto-prev"
   ]
 }

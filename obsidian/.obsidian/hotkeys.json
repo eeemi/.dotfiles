@@ -8,56 +8,13 @@
       "key": "P"
     }
   ],
-  "editor:focus-right": [
-    {
-      "modifiers": [
-        "Mod"
-      ],
-      "key": "L"
-    }
-  ],
-  "editor:toggle-checklist-status": [],
-  "editor:focus-left": [
-    {
-      "modifiers": [
-        "Mod"
-      ],
-      "key": "H"
-    }
-  ],
   "editor:open-search-replace": [],
-  "editor:focus-bottom": [
-    {
-      "modifiers": [
-        "Mod"
-      ],
-      "key": "J"
-    }
-  ],
-  "editor:insert-link": [],
-  "editor:focus-top": [
-    {
-      "modifiers": [
-        "Mod"
-      ],
-      "key": "K"
-    }
-  ],
   "editor:toggle-source": [
     {
       "modifiers": [
         "Mod"
       ],
       "key": "P"
-    }
-  ],
-  "editor:toggle-italics": [
-    {
-      "modifiers": [
-        "Mod",
-        "Shift"
-      ],
-      "key": "I"
     }
   ],
   "switcher:open": [
@@ -108,6 +65,46 @@
         "Shift"
       ],
       "key": "L"
+    }
+  ],
+  "workspace:close": [],
+  "editor:insert-link": [],
+  "editor:toggle-checklist-status": [],
+  "daily-notes:goto-prev": [
+    {
+      "modifiers": [
+        "Mod"
+      ],
+      "key": "K"
+    },
+    {
+      "modifiers": [
+        "Alt"
+      ],
+      "key": "P"
+    }
+  ],
+  "daily-notes:goto-next": [
+    {
+      "modifiers": [
+        "Mod"
+      ],
+      "key": "J"
+    },
+    {
+      "modifiers": [
+        "Alt"
+      ],
+      "key": "N"
+    }
+  ],
+  "markdown:add-metadata-property": [],
+  "daily-notes": [
+    {
+      "modifiers": [
+        "Alt"
+      ],
+      "key": "J"
     }
   ]
 }
