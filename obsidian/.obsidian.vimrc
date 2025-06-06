@@ -8,6 +8,12 @@ set clipboard=unnamed
 nmap j gj
 nmap k gk
 
+exmap swapLineDown obcommand editor:swap-line-down
+vmap J :swapLineDown<CR>V
+
+exmap swapLineUp obcommand editor:swap-line-up
+vmap K :swapLineUp<CR>V
+
 " move file
 exmap moveFile obcommand file-explorer:move-file
 nmap <Space>fm :moveFile<CR>
@@ -31,21 +37,26 @@ nmap <Space>fr :removeFile<CR>
 "exmap renameFile obcommand editor:rename-heading
 "nmap <Space>fn :renameFile<CR>
 
-" open graph
-"exmap graphOpenGlobal obcommand graph:open
-"nmap <Space>gg :graphOpenGlobal<CR>
+" ================================
+" graph
+" ================================
+
+"open graph
+exmap graphOpenGlobal obcommand graph:open
+nmap <Space>G :graphOpenGlobal<CR>
+
 exmap graphOpenLocal obcommand graph:open-local
 nmap <Space>g :graphOpenLocal<CR>
 
-" toggle comment (not working)
+""toggle comment 
 "exmap toggleComments obcommand editor:toggle-comments
-"nmap <Space>gcc :toggleComments<CR>
+"nmap gcc :toggleComments<CR>
 
-" toggle left sidebar (not working)
+" toggle left sidebar 
 "exmap toggleSidebarLeft app:toggle-left-sidebar
 "nmap <Space>bl :toggleSidebarLeft<CR>
 
-" toggle right sidebar (not working)
+" toggle right sidebar 
 "exmap toggleSidebarRight app:toggle-right-sidebar
 "nmap <Space>br :toggleSidebarRight<CR>
 
@@ -82,6 +93,18 @@ nmap <C-w>v :vsplit<CR>
 
 exmap split obcommand workspace:split-horizontal
 nmap <C-w>s :split<CR>
+
+"exmap closeTabGroup obcommand workspace:close-tab-group
+exmap closeTab obcommand workspace:close
+nmap <C-w>q :closeTab<CR>
+
+exmap followLink obcommand editor:follow-link
+nmap gd :followLink<CR>
+" NOTE: nmap gf, i.e., 'go to file', already exists as default functionality
+
+exmap openInNewSplit obcommand editor:open-link-in-new-split
+nmap gD :openInNewSplit<CR>
+nmap gF :openInNewSplit<CR>
 
 "" vertical split
 "exmap vsplit obcommand workspace:split-vertical

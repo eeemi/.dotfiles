@@ -67,7 +67,6 @@
       "key": "L"
     }
   ],
-  "workspace:close": [],
   "editor:insert-link": [],
   "editor:toggle-checklist-status": [],
   "daily-notes:goto-prev": [
@@ -105,6 +104,32 @@
         "Alt"
       ],
       "key": "J"
+    }
+  ],
+  "editor:focus-left": [
+    {
+      "modifiers": [
+        "Mod"
+      ],
+      "key": "H"
+    }
+  ],
+  "editor:focus-right": [
+    {
+      "modifiers": [
+        "Mod"
+      ],
+      "key": "L"
+    }
+  ],
+  "workspace:close-window": [],
+  "workspace:close": [
+    {
+      "modifiers": [
+        "Mod",
+        "Shift"
+      ],
+      "key": "W"
     }
   ]
 }

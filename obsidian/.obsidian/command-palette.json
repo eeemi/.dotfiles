@@ -12,6 +12,7 @@
     "workspace:edit-file-title",
     "editor:toggle-spellcheck",
     "daily-notes:goto-next",
-    "daily-notes:goto-prev"
+    "daily-notes:goto-prev",
+    "file-explorer:reveal-active-file"
   ]
 }
