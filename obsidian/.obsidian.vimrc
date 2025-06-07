@@ -29,6 +29,14 @@ exmap q obcommand workspace:close
 exmap removeFile obcommand app:delete-file
 nmap <Space>fr :removeFile<CR>
 
+" delete without changing register
+nmap <Space>d "_d
+vmap <Space>d "_d
+
+" reset zoom
+exmap resetZoom obcommand window:reset-zoom
+nmap <C-w>0 :resetZoom<CR>
+
 " close palette ??
 "exmap closePalette obcommand workspace:close-others-tab-group
 "nmap <C-c> :closePalette<CR>
