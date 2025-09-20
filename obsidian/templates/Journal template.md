@@ -2,7 +2,7 @@
 tags:
 colorTag:
 properties:
-alias:
+aliases:
 ---
 
 {{date}}
