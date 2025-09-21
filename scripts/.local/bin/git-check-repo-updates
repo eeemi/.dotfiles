@@ -1,0 +1,18 @@
+#!/bin/bash
+
+# list repo paths here separated by a space
+REPOS=""
+
+checkUpdate () {
+    output=$(git -C $path fetch --all --dry-run 2>&1)
+    if [[ -z "$output" ]]; then
+        echo "up to date: $path"
+    else
+        echo "UPDATE AVAILABLE: $path"
+    fi
+}
+
+for path in $REPOS; do
+    checkUpdate
+done
+
