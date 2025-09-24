@@ -1,4 +1,6 @@
 #!/bin/bash
+# USAGE:
+# Check up-to-date status of a selected list of repos.
 
 # list repo paths here separated by a space
 REPOS=""
