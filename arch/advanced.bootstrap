@@ -16,6 +16,24 @@
 # `htop`: display processes
 # `jq`: JSON
 
+# TODO: window manager?
+# kde / plasma
+# hyprland
+# i3
+
+# TODO: will these be included in the following packages?
+# zip unzip \
+# less \
+# go python \
+
+# TODO: what about these?
+# sddm \
+# firefox \
+# gimp \
+# ghostty \
+# fail2ban \
+# qemu \
+
 pacstrap -K /mnt base linux linux-firmware \
 base-devel \
 linux-lts \
@@ -27,8 +45,11 @@ networkmanager \
 grub efibootmgr \
 man-db man-pages texinfo \
 openssh \
-curl \
+curl wget \
 tmux \
 htop \
-jq
+jq yq \
+tree \
+fzf \
+fastfetch
 
