@@ -1,4 +1,34 @@
 # https://wiki.archlinux.org/title/Installation_guide
+# DESCRIPTIONS:
+# `base linux linux-firmware`: baseline (base, kernel, kernel firmware)
+# `base-devel`: included packages listed here `https://archlinux.org/packages/core/any/base-devel/`
+# `linux-lts`: more stable kernel
+# `amd-ucode` or `intel-ucode`: CPU microcode updates #NOTE: pick only one
+# `sudo`: already in `base-devel` but here anyway
+# `neovim`,`vim`,`nano`: text editors
+# `git`: git
+# `networkmanager`: remember to activate `systemctl start [--now] NetworkManager.service`
+# `grub`,`efibootmgr`: boot loader and manager
+# `man-db`,`man-pages`,`texinfo`: man pages
+# `openssh`: ssh
+# `curl`: curl
+# `tmux`: terminal multiplexer
+# `htop`: display processes
+# `jq`: JSON
 
-pacstrap -K /mnt base linux linux-firmware
+pacstrap -K /mnt base linux linux-firmware \
+base-devel \
+linux-lts \
+amd-ucode \
+sudo \
+neovim vim nano \
+git \
+networkmanager \
+grub efibootmgr \
+man-db man-pages texinfo \
+openssh \
+curl \
+tmux \
+htop \
+jq
 
