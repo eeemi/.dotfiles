@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/env bash
 # USAGE:
 # Check up-to-date status of a selected list of repos.
 

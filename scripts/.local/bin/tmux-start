@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/env bash
 # put file in ~/.local/bin/ or /usr/local/bin
 
 if tmux has-session -t home 2> /dev/null; then
