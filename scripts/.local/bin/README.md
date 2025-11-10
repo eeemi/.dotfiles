@@ -32,9 +32,9 @@ ln -s $PWD/tmux-start ~/.local/bin/tmux-start
 Note: use `sudo` if using e.g. `/usr/local/bin`.
 
 ```sh
-sudo ln -s $PWD/tmux-attach ~/.local/bin/tmux-attach
-sudo ln -s $PWD/tmux-sessionizer ~/.local/bin/tmux-sessionizer
-sudo ln -s $PWD/tmux-start ~/.local/bin/tmux-start
+sudo ln -s $PWD/tmux-attach /usr/local/bin/tmux-attach
+sudo ln -s $PWD/tmux-sessionizer /usr/local/bin/tmux-sessionizer
+sudo ln -s $PWD/tmux-start /usr/local/bin/tmux-start
 ```
 
 ## Option 3
