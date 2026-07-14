@@ -3,8 +3,10 @@
 # `base linux linux-firmware`: baseline (base, kernel, kernel firmware)
 # `base-devel`: included packages listed here `https://archlinux.org/packages/core/any/base-devel/`
 # `linux-lts`: more stable kernel
-# `amd-ucode` or `intel-ucode`: CPU microcode updates #NOTE: pick only one
+# `amd-ucode` or `intel-ucode`: CPU microcode updates # NOTE: pick only one
 # `sudo`: already in `base-devel` but here anyway
+# `zram-generator`: zram swap
+# `btrfs-progs`: btrfs related cmds # NOTE: only useful with btrfs file system
 # `neovim`,`vim`,`nano`: text editors
 # `git`: git
 # `networkmanager`: remember to activate `systemctl start [--now] NetworkManager.service`
@@ -12,19 +14,24 @@
 # `man-db`,`man-pages`,`texinfo`: man pages
 # `openssh`: ssh
 # `curl`: curl
+# `bash-completion`: bash completion 
 # `tmux`: terminal multiplexer
 # `htop`: display processes
 # `jq`: JSON
 
 # TODO: window manager?
-# kde / plasma
+# kde / plasma / plasma-meta
 # hyprland
 # i3
 
 # TODO: will these be included in the following packages?
 # zip unzip \
-# less \
-# go python \
+# go \
+#
+# NOTE: are included in the following
+# python
+# less
+# nftables (comes with `networkmanager`)
 
 # TODO: what about these?
 # sddm \
@@ -33,12 +40,23 @@
 # ghostty \
 # fail2ban \
 # qemu \
+# ufw / nftables / firewalld \
+# bwrap / firejail / bubblejail (aur?)\
+# apparmor \
+# snap-pac / grub-btrfs \
+# 
+# NOTE: `nftables` is included in `networkmanager`
+# WARN: what should be handled with e.g. flatpaks?
+# firefox (?)
 
-pacstrap -K /mnt base linux linux-firmware \
+
+pacstrap -K /mnt base linux linux-headers linux-firmware \
 base-devel \
-linux-lts \
+linux-lts linux-lts-headers \
 amd-ucode \
 sudo \
+zram-generator \
+btrfs-progs \
 neovim vim nano \
 git \
 networkmanager \
@@ -46,6 +64,7 @@ grub efibootmgr \
 man-db man-pages texinfo \
 openssh \
 curl wget \
+bash-completion \
 tmux \
 htop \
 jq yq \
