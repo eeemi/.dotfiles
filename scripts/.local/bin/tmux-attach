@@ -13,5 +13,5 @@ fi
 fzf=$(echo "$sessions" | fzf | awk -F: '{print $1}')
 # echo $fzf
 
-tmux a -t $fzf
+tmux a -t "$fzf"
 
