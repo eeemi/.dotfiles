@@ -13,6 +13,7 @@
     "editor:toggle-spellcheck",
     "daily-notes:goto-next",
     "daily-notes:goto-prev",
-    "file-explorer:reveal-active-file"
+    "file-explorer:reveal-active-file",
+    "editor:focus"
   ]
 }
