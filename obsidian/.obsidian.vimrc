@@ -120,10 +120,10 @@ nmap gF :openInNewSplit<CR>
 
 " Go back and forward with Ctrl+O and Ctrl+I
 " (make sure to remove default Obsidian shortcuts for these to work)
-exmap back obcommand app:go-back
-nmap <C-o> :back<CR>
-exmap forward obcommand app:go-forward
-nmap <C-i> :forward<CR>
+"exmap back obcommand app:go-back
+"nmap <C-o> :back<CR>
+"exmap forward obcommand app:go-forward
+"nmap <C-i> :forward<CR>
 
 " toggle spellcheck
 exmap toggleSpellCheck obcommand editor:toggle-spellcheck

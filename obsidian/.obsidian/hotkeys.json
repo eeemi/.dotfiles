@@ -56,6 +56,12 @@
         "Shift"
       ],
       "key": "H"
+    },
+    {
+      "modifiers": [
+        "Mod"
+      ],
+      "key": "O"
     }
   ],
   "app:go-forward": [
@@ -65,6 +71,12 @@
         "Shift"
       ],
       "key": "L"
+    },
+    {
+      "modifiers": [
+        "Mod"
+      ],
+      "key": "I"
     }
   ],
   "editor:insert-link": [],
